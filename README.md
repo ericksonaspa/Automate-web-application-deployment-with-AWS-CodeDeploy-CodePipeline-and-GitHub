@@ -220,10 +220,11 @@ This is the script for installing the CodeDeploy agent for Amazon Linux or RHEL.
 
 ![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/3b5b68be-6703-4f64-b940-d06ebe1adcd2)
 
-14. Our project is now being deployed. 
+14. Our project is now being deployed. After a few minutes, both **Source** and **Deploy** should be **Succeeded**. 
 
-![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/cb67816f-ce49-45e5-8bdc-a61a09813764)
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/7b839f78-8dbf-486e-86e1-849f6c09962f)
 
-15. 
+Let's verify with our instance if this is working. Go back to the EC2 dashboard, copy and paste the **Public IPv4 DNS** of your instance to a new open browser tab. You should see the same as this below: 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/89026488-622c-4902-bdc4-bc7534f314d8)
 
