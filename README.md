@@ -4,6 +4,7 @@ In this project, I will walk you through how to automate the deployment of your 
 
 - Create 2 IAM roles, 1 for EC2 and 1 for CodeDeploy
 - Create an EC2 Instance
+- Create application and deployment group with CodeDeploy
 - 
 
 The architecture plans to be built through this project is as follows.
@@ -117,34 +118,45 @@ This is the script for installing the CodeDeploy agent for Amazon Linux or RHEL.
 
 ![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/ecff20c8-a4c3-449c-b89c-87ddd9bcee82)
 
+13. Wait until the **Instance state** status changes from **Pending** to **Running** and **Status check** from **Initializing** to **2/2 checks passed**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/d469cace-a496-458b-b4c0-8951d2373348)
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/4b6e6bf2-fe29-488d-a021-dbd09a2deafb)
 
+## Create application and deployment group with CodeDeploy
 
+1. From your EC2 Dashboard, search for CodeDeploy and open it in a new tab. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/a103abc3-6818-421e-859a-b99dcec34f49)
 
+2. Go to the **Applications** and then click **Create application**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/6d8c7c3f-09db-4000-8821-1b7ab7111b8b)
 
+3. Name your application, choose the **EC2/On-premises** under the **Compute platform** then click **Create application**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/7b51b441-984f-41c5-a00d-a3a99eabdc01)
 
+4. On the **Deployment groups**, click **Create deployment group**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/3c489d1c-1d01-425d-8602-fa63945cc0cd)
 
+5. Enter a name for your deployment group and then select the IAM role we created earlier. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/6252c4b4-6f47-4bc8-8fd3-828bb9611125)
 
+6. On the **Deployment type**, select **In-place**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/7518b09c-ae26-42a6-b4bb-3cdd4ca87df6)
 
+7. Under the **Environment configuration**, tick the checkbox for the **Amazon EC2 instances**. On the **Tag group 1**, select **Name** for the **Key** and then the name of your application on the **Value**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/c39b3b60-1c08-42ba-a2ee-ec632eb70261)
 
+8. Under the **Deployment settings**, just select the **CodeDeployDefault.AllAtOnce**, untick the checkbox for the **Enable load balancing**. Once done, hit **Create deployment group**. 
 
-
-
-
-
-
-
-
-
-
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/208f7cd9-40d5-46eb-b151-21d3f4258853)
 
 
 
