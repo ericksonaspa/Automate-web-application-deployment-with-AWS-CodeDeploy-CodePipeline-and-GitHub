@@ -101,18 +101,9 @@ The architecture plans to be built through this project is as follows.
 
 11. Scroll down again, under the **User data - optional**, paste the following script:
 
-_**#!/bin/bash
-sudo yum -y update
-sudo yum -y install ruby
-sudo yum -y install wget
-cd /home/ec2-user
-wget https://aws-codedeploy-us-east-1.s3.us-east-1.amazonaws.com/latest/install
-sudo chmod +x ./install
-sudo ./install auto**_
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/b0a96373-221a-4949-b4db-7ba44cc89f05)
 
 This is the script for installing the CodeDeploy agent for Amazon Linux or RHEL. For your reference, you may refer to this link: [Install the CodeDeploy agent for Amazon Linux or RHEL](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install-linux.html)
-
-![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/6e046a61-b427-4bcf-8c74-ed1b7a9c53b7)
 
 12. Once done, launch your instance. 
 
