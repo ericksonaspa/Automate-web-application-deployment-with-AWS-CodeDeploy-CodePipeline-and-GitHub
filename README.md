@@ -228,3 +228,22 @@ Let's verify with our instance if this is working. Go back to the EC2 dashboard,
 
 ![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/89026488-622c-4902-bdc4-bc7534f314d8)
 
+If I make changes to my index.html code in this repository, this should also be deployed and reflected in our EC2 instance. See the following screenshots: 
+
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/07850cbe-ba1b-46af-b452-eafc6516d300)
+
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/3c202104-2bdd-41f9-a836-313550d3c03f)
+
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/2e2cb65d-3eb4-4d50-af15-7fa1a9f1eb7f)
+
+As you can see, the changes were applied automatically. 
+
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/0d879eca-4c0a-40b9-95a6-1340ff1d31ba)
+
+Congratulations! You have finished this simple walkthrough project with AWS and GitHub. Kindly check out my other projects in this GitHub to learn more about AWS services. 
+
+
+
+
+
+
