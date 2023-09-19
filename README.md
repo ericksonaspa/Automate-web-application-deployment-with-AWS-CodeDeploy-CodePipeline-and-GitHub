@@ -5,7 +5,7 @@ In this project, I will walk you through how to automate the deployment of your 
 - Create 2 IAM roles, 1 for EC2 and 1 for CodeDeploy
 - Create an EC2 Instance
 - Create application and deployment group with CodeDeploy
-- 
+- Create a pipeline for the deployment
 
 The architecture plans to be built through this project is as follows.
 
@@ -158,54 +158,72 @@ This is the script for installing the CodeDeploy agent for Amazon Linux or RHEL.
 
 ![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/208f7cd9-40d5-46eb-b151-21d3f4258853)
 
+9. Our deployment group is now created. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/44de151d-69b7-4907-b703-d08be6824b5c)
 
+## Create a pipeline for the deployment
 
+1. On the left-navigation pane, expand the **Pipeline**, select **Pipelines** and then click on the **Create Pipeline**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/03331801-1228-4566-bdd4-bfd55f84d13c)
 
+2. Name your pipeline and leave everything as default. Scroll down and hit **Next**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/a0714dff-a7ec-435d-b2f8-c8e5f25d8f44)
 
+3. On the Source provider, select GitHub (Version 2). 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/1ecbc9b5-9d12-4749-870e-fd70f307fe22)
 
+4. Click the Connect to GitHub. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/d04bb34f-3ffc-4c67-82fa-1a1e615b124f)
 
+5. Enter a name for your **GitHub App connection**, then click **Connect to GitHub**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/347ac0bc-a553-4fcb-a42d-8b414773a722)
 
+6. Click **Install a new app** and choose your GitHub account. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/028fa0f8-0e7a-4b91-84d3-6b74fdb91417)
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/654cf847-44f1-47a4-bb8d-b2729dfaca94)
 
+7. Enter your password and confirm. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/6f9e6de6-72ac-4185-94fa-428043e5a026)
 
+8. Up to you to select All repositories or Only select repositories. Once done, click **Install**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/531506dd-7650-48d1-a8ec-df49953650a4)
 
+9. On the Repository name, select our repository. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/3834ad95-d338-4276-931a-88494d09bab4)
 
+10. For the **Branch name**, select **main**. Leave other fields at their default values, and then click **Next**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/529dd3ba-9dab-4e4e-b94c-21d0c8e28b12)
 
+11. For the **Step 3 Add Build Stage**, just select **Skip build stage**. Then, hit **Skip** again for the warning. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/c0dc68d7-c153-4b3e-95aa-3b1c6bec2d65)
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/8b3bf56a-a364-4891-91c3-f8fb180c1ddf)
 
+12. Under the **Deploy**, select the following and then hit **Next**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/8badaa07-5a0c-4f17-86ac-6726a15cd32a)
 
+13. Once done, review all of the details we have entered. If all are accurate and correct, proceed in hitting **Create pipeline**. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/3b5b68be-6703-4f64-b940-d06ebe1adcd2)
 
+14. Our project is now being deployed. 
 
+![image](https://github.com/ericksonaspa/Automate-web-application-deployment-with-AWS-CodeDeploy-CodePipeline-and-GitHub/assets/77118362/cb67816f-ce49-45e5-8bdc-a61a09813764)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+15. 
 
 
